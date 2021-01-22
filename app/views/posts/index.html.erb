@@ -1,1 +1,6 @@
 <h1>Photo-gram</h1>
+
+<% @posts.each do |post| %>
+  <%= image_tag(post.image.variant(resize_to_limit: [100, 100])) %>
+  <%= post.caption %>
+<% end %>
