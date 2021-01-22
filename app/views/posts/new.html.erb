@@ -1,0 +1,8 @@
+
+<h1>New post</h1>
+
+<%= simple_form_for @post do |p| %>
+  <%= p.input :caption %>
+  <%= p.input :image %>
+  <%= p.button :submit %>
+<% end %>
